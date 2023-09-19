@@ -1,0 +1,34 @@
+slackSyncs:
+  - name: Firewarden Dev Channel
+    schedules:
+      - name: Firewarden
+        userGroups:
+          - name: firewarden
+          - handle: firewarden
+    channel:
+      name: practices-dev-firewarden
+    template: |-
+      <@{{.Firewarden}}>  is this week's :helmet_with_white_cross:
+    dryRun: false
+  - name: Firewarden Support Channel
+    schedules:
+      - name: Firewarden
+        userGroups:
+          - name: firewarden
+          - handle: firewarden
+    channel:
+      name: requests-product-support
+    template: |-
+      <@{{.Firewarden}}>  is this week's :helmet_with_white_cross:
+    dryRun: false
+  - name: On Call
+    schedules:
+      - name: On Call
+        userGroups:
+          - name: On Call
+          - handle: oncall
+    channel:
+      name: practices-dev-on-call
+    template: |-
+      <@{{.OnCall}}>  is On Call
+    dryRun: false    
