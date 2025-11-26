@@ -23,7 +23,7 @@ slackSyncs:
     dryRun: false
   - name: On Call
     schedules:
-      - name: On Call
+      - name: On Call (L1)
         userGroups:
           - name: On Call
           - handle: oncall
